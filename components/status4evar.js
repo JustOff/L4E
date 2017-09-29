@@ -634,7 +634,7 @@ Status_4_Evar.prototype =
 
 	startup: function()
 	{
-		this.prefs = Services.prefs.getBranch("status4evar.").QueryInterface(CI.nsIPrefBranch2);
+		this.prefs = Services.prefs.getBranch("extensions.location4evar.").QueryInterface(CI.nsIPrefBranch2);
 
 		this.firstRun = this.prefs.getBoolPref("firstRun");
 		if(this.firstRun)
