@@ -1,4 +1,4 @@
-<!ENTITY status4evar.window.title "Status-4-Evar Preferences">
+<!ENTITY status4evar.window.title "Location-4-Evar Preferences">
 
 <!ENTITY status4evar.pane.status "Status">
 <!ENTITY status4evar.pane.progress "Progress">
@@ -6,13 +6,13 @@
 <!ENTITY status4evar.pane.advanced "Advanced">
 
 <!ENTITY status4evar.tab.general "General">
-<!ENTITY status4evar.tab.toolbar "Toolbar">
+<!ENTITY status4evar.tab.toolbar "Status Bar">
 <!ENTITY status4evar.tab.urlbar "Location Bar">
 <!ENTITY status4evar.tab.popup "Popup">
 <!ENTITY status4evar.tab.tabs "Tabs">
 
 <!ENTITY status4evar.option.none "None">
-<!ENTITY status4evar.option.toolbar "Toolbar">
+<!ENTITY status4evar.option.toolbar "Status Bar">
 <!ENTITY status4evar.option.urlbar "Location Bar">
 <!ENTITY status4evar.option.popup "Popup">
 <!ENTITY status4evar.option.tooltip "Tooltip">
@@ -73,7 +73,7 @@
 <!ENTITY status4evar.progress.urlbar.enable.label "Show progress in the Location Bar">
 <!ENTITY status4evar.progress.urlbar.line.label "Line style:">
 
-<!ENTITY status4evar.progress.toolbar.force.label "Always show the toolbar item">
+<!ENTITY status4evar.progress.toolbar.force.label "Always show the progress meter">
 
 <!ENTITY status4evar.editor.label "Editor:">
 <!ENTITY status4evar.editor.css.color.label "Color:">
