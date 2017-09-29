@@ -259,7 +259,7 @@
 			]]></field>
 
 			<field name="_strings" readonly="true"><![CDATA[
-				document.getElementById("bundle_status4evar");
+				document.getElementById("bundle_location4evar");
 			]]></field>
 
 			<property name="value">

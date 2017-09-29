@@ -22,7 +22,7 @@
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<stringbundleset id="stringbundleset">
-		<stringbundle id="bundle_status4evar" src="chrome://location4evar/locale/overlay.properties" />
+		<stringbundle id="bundle_location4evar" src="chrome://location4evar/locale/overlay.properties" />
 	</stringbundleset>
 
 	<script type="application/javascript" src="chrome://location4evar/content/overlay.js" />

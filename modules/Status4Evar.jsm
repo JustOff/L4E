@@ -182,7 +182,7 @@ S4EWindowGetters.prototype =
 			["statusBar",              "status4evar-status-bar"],
 			["statusWidget",           "status4evar-status-widget"],
 			["statusWidgetLabel",      "status4evar-status-text"],
-			["strings",                "bundle_status4evar"],
+			["strings",                "bundle_location4evar"],
 			["throbberProgress",       "status4evar-throbber-widget"],
 			["toolbarProgress",        "status4evar-progress-bar"],
 			["urlbarProgress",         "urlbar-progress-alt"]
