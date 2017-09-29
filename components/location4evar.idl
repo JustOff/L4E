@@ -17,11 +17,6 @@ interface nsIDOMWindow;
 [scriptable, uuid(6cd980fb-3fb6-4f15-b8fe-e0de557960f9)]
 interface nsILocation4Evar : nsISupports
 {
-	readonly attribute boolean   addonbarBorderStyle;
-	readonly attribute boolean   addonbarCloseButton;
-	readonly attribute boolean   addonbarLegacyShim;
-	readonly attribute boolean   addonbarWindowGripper;
-
 	readonly attribute boolean   advancedStatusDetectFullScreen;
 	readonly attribute boolean   advancedStatusDetectVideo;
 	readonly attribute boolean   advancedUrlbarForceBinding;

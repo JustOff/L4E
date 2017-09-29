@@ -10,11 +10,6 @@
  * ***** END LICENSE BLOCK *****
 */
 
-pref("extensions.location4evar.addonbar.borderStyle", false);
-pref("extensions.location4evar.addonbar.closeButton", false);
-pref("extensions.location4evar.addonbar.legacyShim", true);
-pref("extensions.location4evar.addonbar.windowGripper", true);
-
 pref("extensions.location4evar.advanced.showWarning", true);
 pref("extensions.location4evar.advanced.status.detectFullScreen", true);
 pref("extensions.location4evar.advanced.status.detectVideo", true);

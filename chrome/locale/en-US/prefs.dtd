@@ -4,7 +4,6 @@
 <!ENTITY status4evar.pane.progress "Progress">
 <!ENTITY status4evar.pane.download "Download">
 <!ENTITY status4evar.pane.addonbar "Add-on Bar">
-<!ENTITY status4evar.pane.statusbar "Status Bar">
 <!ENTITY status4evar.pane.advanced "Advanced">
 
 <!ENTITY status4evar.tab.general "General">
@@ -107,13 +106,6 @@
 <!ENTITY status4evar.download.color.paused.label "Progress color for paused downloads:">
 <!ENTITY status4evar.download.notify.animate.label "Animate button when download completes">
 <!ENTITY status4evar.download.notify.timeout.label "Highlight button when download completes:">
-
-
-
-<!ENTITY status4evar.addonbar.borderStyle "Use alternate toolbar borders">
-<!ENTITY status4evar.addonbar.windowGripper "Show the window re-size gripper">
-<!ENTITY status4evar.addonbar.closeButton "Show the close button">
-<!ENTITY status4evar.addonbar.legacyShim "Enable legacy status bar panel support">
 
 
 

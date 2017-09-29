@@ -28,7 +28,6 @@ CU.import("resource://gre/modules/AddonManager.jsm");
 CU.import("resource://location4evar/Status.jsm");
 CU.import("resource://location4evar/Progress.jsm");
 CU.import("resource://location4evar/Downloads.jsm");
-CU.import("resource://location4evar/Toolbars.jsm");
 
 function Status4Evar(window, gBrowser, toolbox)
 {
@@ -37,7 +36,6 @@ function Status4Evar(window, gBrowser, toolbox)
 	this._toolbox = toolbox;
 
 	this.getters = new S4EWindowGetters(this._window);
-	this.toolbars = new S4EToolbars(this._window, gBrowser, this._toolbox, s4e_service, this.getters);
 	this.statusService = new S4EStatusService(this._window, s4e_service, this.getters);
 	this.progressMeter = new S4EProgressService(gBrowser, s4e_service, this.getters, this.statusService);
 	this.downloadStatus = new S4EDownloadService(this._window, gBrowser, s4e_service, this.getters);
@@ -53,7 +51,6 @@ Status4Evar.prototype =
 	_toolbox: null,
 
 	getters:         null,
-	toolbars:        null,
 	statusService:   null,
 	progressMeter:   null,
 	downloadStatus:  null,
@@ -67,7 +64,6 @@ Status4Evar.prototype =
 			this._toolbox.addEventListener("aftercustomization", this, false);
 		}
 
-		this.toolbars.setup();
 		this.updateWindow();
 
 		// OMFG HAX! If a page is already loading, fake a network start event
@@ -91,11 +87,10 @@ Status4Evar.prototype =
 		this.statusService.destroy();
 		this.downloadStatus.destroy();
 		this.progressMeter.destroy();
-		this.toolbars.destroy();
 		this.sizeModeService.destroy();
 
 		["_window", "_toolbox", "getters", "statusService", "downloadStatus",
-		"progressMeter", "toolbars", "sizeModeService"].forEach(function(prop)
+		"progressMeter", "sizeModeService"].forEach(function(prop)
 		{
 			delete this[prop];
 		}, this);
@@ -121,9 +116,6 @@ Status4Evar.prototype =
 	{
 		Services.console.logStringMessage("S4E Calling beforeCustomization: " + this._id);
 
-		this.toolbars.updateSplitters(false);
-		this.toolbars.updateWindowGripper(false);
-
 		this.statusService.setNoUpdate(true);
 		let status_label = this.getters.statusWidgetLabel;
 		if(status_label)
@@ -144,13 +136,11 @@ Status4Evar.prototype =
 		this.statusService.buildBinding();
 		this.downloadStatus.init();
 		this.downloadStatus.customizing(false);
-		this.toolbars.updateSplitters(true);
 
 		s4e_service.updateWindow(this._window);
 		// This also handles the following:
 		// * buildTextOrder()
 		// * updateStatusField(true)
-		// * updateWindowGripper(true)
 	},
 
 	launchOptions: function(currentWindow)
@@ -196,7 +186,6 @@ S4EWindowGetters.prototype =
 	_getterMap:
 		[
 			["addonbar",               "addon-bar"],
-			["addonbarCloseButton",    "addonbar-closebutton"],
 			["browserBottomBox",       "browser-bottombox"],
 			["downloadButton",         "status4evar-download-button"],
 			["downloadButtonTooltip",  "status4evar-download-tooltip"],
@@ -284,7 +273,6 @@ function SizeModeService(window, s4e)
 	this._s4e = s4e;
 
 	this.lastFullScreen = this._window.fullScreen;
-	this.lastwindowState = this._window.windowState;
 	this._window.addEventListener("sizemodechange", this, false);
 }
 
@@ -294,7 +282,6 @@ SizeModeService.prototype =
 	_s4e:            null,
 
 	lastFullScreen:  null,
-	lastwindowState: null,
 
 	destroy: function()
 	{
@@ -312,12 +299,6 @@ SizeModeService.prototype =
 		{
 			this.lastFullScreen = this._window.fullScreen;
 			this._s4e.statusService.updateFullScreen();
-		}
-
-		if(this._window.windowState != this.lastwindowState)
-		{
-			this.lastwindowState = this._window.windowState;
-			this._s4e.toolbars.updateWindowGripper(true);
 		}
 	},
 

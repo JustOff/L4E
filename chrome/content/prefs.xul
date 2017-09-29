@@ -28,7 +28,6 @@
 
 <?xml-stylesheet href="chrome://location4evar/content/prefs.css" type="text/css" ?>
 <?xml-stylesheet href="chrome://location4evar/skin/prefs.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://location4evar-os/skin/prefs.css" type="text/css" ?>
 
 <prefwindow id="status4evar-prefs" title="&status4evar.window.title;"
             xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -383,23 +382,6 @@
 				<colorpicker id="status4evar-download-color-paused-picker" preference="status4evar-pref-download-color-paused" type="button" />
 			</hbox>
 		</vbox>
-	</prefpane>
-
-	<prefpane id="status4evar-pane-addonbar" label="&status4evar.pane.statusbar;">
-		<preferences>
-			<preference id="status4evar-pref-addonbar-borderStyle"   name="extensions.location4evar.addonbar.borderStyle"   type="bool" />
-			<preference id="status4evar-pref-addonbar-closeButton"   name="extensions.location4evar.addonbar.closeButton"   type="bool" />
-			<preference id="status4evar-pref-addonbar-legacyShim"    name="extensions.location4evar.addonbar.legacyShim"    type="bool" />
-			<preference id="status4evar-pref-addonbar-windowGripper" name="extensions.location4evar.addonbar.windowGripper" type="bool" />
-		</preferences>
-
-		<checkbox id="status4evar-addonbar-borderStyle-check" preference="status4evar-pref-addonbar-borderStyle" label="&status4evar.addonbar.borderStyle;" />
-
-		<checkbox id="status4evar-addonbar-closeButton-check" preference="status4evar-pref-addonbar-closeButton" label="&status4evar.addonbar.closeButton;" />
-
-		<checkbox id="status4evar-addonbar-legacyShim-check" preference="status4evar-pref-addonbar-legacyShim" label="&status4evar.addonbar.legacyShim;" />
-
-		<checkbox id="status4evar-addonbar-windowGripper-check" preference="status4evar-pref-addonbar-windowGripper" label="&status4evar.addonbar.windowGripper;" />
 	</prefpane>
 
 	<prefpane id="status4evar-pane-advanced" label="&status4evar.pane.advanced;">

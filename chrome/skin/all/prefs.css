@@ -32,11 +32,6 @@ radio[pane="status4evar-pane-download"]
 	list-style-image: url("chrome://mozapps/skin/downloads/downloadIcon.png");
 }
 
-radio[pane="status4evar-pane-addonbar"]
-{
-	list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric.png");
-}
-
 radio[pane="status4evar-pane-advanced"]
 {
 	list-style-image: url("chrome://browser/skin/preferences/Options.png");

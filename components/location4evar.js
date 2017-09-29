@@ -35,11 +35,6 @@ Location_4_Evar.prototype =
 
 	prefs:          null,
 
-	addonbarBorderStyle:            false,
-	addonbarCloseButton:            false,
-	addonbarLegacyShim:             true,
-	addonbarWindowGripper:          true,
-
 	advancedStatusDetectFullScreen: true,
 	advancedStatusDetectVideo:      true,
 	advancedUrlbarForceBinding:     false,
@@ -85,58 +80,6 @@ Location_4_Evar.prototype =
 
 	pref_registry:
 	{
-		"addonbar.borderStyle":
-		{
-			update: function()
-			{
-				this.addonbarBorderStyle = this.prefs.getBoolPref("addonbar.borderStyle");
-			},
-			updateWindow: function(win)
-			{
-				let browser_bottom_box = win.justoff.status4evar.getters.browserBottomBox;
-				if(browser_bottom_box)
-				{
-					this.setBoolElementAttribute(browser_bottom_box, "s4eboarder", this.addonbarBorderStyle);
-				}
-			}
-		},
-
-		"addonbar.closeButton":
-		{
-			update: function()
-			{
-				this.addonbarCloseButton = this.prefs.getBoolPref("addonbar.closeButton");
-			},
-			updateWindow: function(win)
-			{
-				let addonbar_close_button = win.justoff.status4evar.getters.addonbarCloseButton;
-				if(addonbar_close_button)
-				{
-					addonbar_close_button.hidden = !this.addonbarCloseButton;
-				} 
-			}
-		},
-
-		"addonbar.legacyShim":
-		{
-			update: function()
-			{
-				this.addonbarLegacyShim = this.prefs.getBoolPref("addonbar.legacyShim");
-			}
-		},
-
-		"addonbar.windowGripper":
-		{
-			update: function()
-			{
-				this.addonbarWindowGripper = this.prefs.getBoolPref("addonbar.windowGripper");
-			},
-			updateWindow: function(win)
-			{
-				win.justoff.status4evar.toolbars.updateWindowGripper(true);
-			}
-		},
-
 		"advanced.status.detectFullScreen":
 		{
 			update: function()
