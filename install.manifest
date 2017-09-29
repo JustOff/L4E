@@ -16,7 +16,6 @@ creator=Off JustOff &lt;Off.Just.Off@gmail.com&gt;
 contributor=Sparky Bluefang
 homepageURL=https://github.com/JustOff/L4E
 optionsURL=chrome://location4evar/content/prefs.xul
-iconURL=chrome://location4evar/skin/s4e32.png
 
 # App data
 defaultLocale=en-US
