@@ -27,6 +27,20 @@
 
 	<script type="application/javascript" src="chrome://location4evar/content/overlay.js" />
 
+	<commandset>
+		<command id="L4E:Options" oncommand="justoff.status4evar.launchOptions(window);"/>
+	</commandset>
+
+	<menupopup id="menu_ToolsPopup">
+		<menuitem id="l4e-options-fx" command="L4E:Options"
+			label="&status4evar.menu.options.label;"/>
+	</menupopup>
+
+	<menupopup id="appmenu_customizeMenu">
+		<menuitem id="l4e-options-app" command="S4E:Options"
+			label="&status4evar.menu.options.label;"/>
+	</menupopup>
+
 	<textbox id="urlbar" pmpack="end">
 		<progressmeter id="urlbar-progress-alt"  mode="normal" value="0" collapsed="true" />
 	</textbox>
