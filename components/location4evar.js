@@ -434,6 +434,8 @@ Location_4_Evar.prototype =
 
 	startup: function()
 	{
+		Services.prefs.setIntPref("status4evar.status", 0);
+		Services.prefs.setIntPref("status4evar.status.linkOver", 0);
 		this.prefs = Services.prefs.getBranch("extensions.location4evar.").QueryInterface(CI.nsIPrefBranch2);
 
 		this.firstRun = this.prefs.getBoolPref("firstRun");
@@ -476,6 +478,8 @@ Location_4_Evar.prototype =
 		}
 
 		this.prefs = null;
+		Services.prefs.clearUserPref("status4evar.status");
+		Services.prefs.clearUserPref("status4evar.status.linkOver");
 	},
 
 	migrate: function()
