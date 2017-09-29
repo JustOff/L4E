@@ -19,7 +19,7 @@ const CI = Components.interfaces;
 const CU = Components.utils;
 
 const s4e_service = CC["@off.justoff/location4evar;1"].getService(CI.nsILocation4Evar);
-const uuidService = CC["@mozilla.org/uuid-generator;1"].getService(CI.nsIUUIDGenerator);
+//const uuidService = CC["@mozilla.org/uuid-generator;1"].getService(CI.nsIUUIDGenerator);
 
 CU.import("resource://gre/modules/Services.jsm");
 CU.import("resource://gre/modules/XPCOMUtils.jsm");
@@ -30,7 +30,7 @@ CU.import("resource://location4evar/Progress.jsm");
 
 function Location4Evar(window, gBrowser, toolbox)
 {
-	this._id = uuidService.generateUUID();
+//	this._id = uuidService.generateUUID();
 	this._window = window;
 	this._toolbox = toolbox;
 
@@ -44,7 +44,7 @@ function Location4Evar(window, gBrowser, toolbox)
 
 Location4Evar.prototype =
 {
-	_id: null,
+//	_id: null,
 	_window:  null,
 	_toolbox: null,
 
