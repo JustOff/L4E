@@ -29,7 +29,7 @@
 <?xml-stylesheet href="chrome://location4evar/content/prefs.css" type="text/css" ?>
 <?xml-stylesheet href="chrome://location4evar/skin/prefs.css" type="text/css" ?>
 
-<prefwindow id="status4evar-prefs" title="&status4evar.window.title;"
+<prefwindow id="location4evar-prefs" title="&status4evar.window.title;"
             xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
             onload="status4evarPrefs.onPrefWindowLoad();" onunload="status4evarPrefs.onPrefWindowUnLoad();">
 

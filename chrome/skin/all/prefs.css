@@ -12,7 +12,7 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-#status4evar-prefs > prefpane > vbox.content-box
+#location4evar-prefs > prefpane > vbox.content-box
 {
 	min-height: 18em !important;
 }

@@ -13,7 +13,7 @@
    - ***** END LICENSE BLOCK *****
 -->
 
-<bindings id="status4evar-prefs-bindings"
+<bindings id="location4evar-prefs-bindings"
           xmlns="http://www.mozilla.org/xbl"
           xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
           xmlns:xbl="http://www.mozilla.org/xbl">
