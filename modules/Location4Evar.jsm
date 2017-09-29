@@ -110,7 +110,7 @@ Location4Evar.prototype =
 
 	beforeCustomization: function()
 	{
-		Services.console.logStringMessage("S4E Calling beforeCustomization: " + this._id);
+//		Services.console.logStringMessage("L4E Calling beforeCustomization: " + this._id);
 
 		this.statusService.setNoUpdate(true);
 		let status_label = this.getters.statusWidgetLabel;
@@ -122,7 +122,7 @@ Location4Evar.prototype =
 
 	updateWindow: function()
 	{
-		Services.console.logStringMessage("S4E Calling updateWindow: " + this._id);
+//		Services.console.logStringMessage("L4E Calling updateWindow: " + this._id);
 
 		this.statusService.setNoUpdate(false);
 		this.getters.resetGetters();
