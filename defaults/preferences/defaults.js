@@ -33,7 +33,6 @@ pref("status4evar.download.progress", 1);
 pref("status4evar.download.tooltip", 1);
 
 pref("status4evar.firstRun", true);
-pref("status4evar.firstRun.australis", true);
 
 //pref("status4evar.progress.tab", 1);
 //pref("status4evar.progress.tab.css", "#33FF33");
