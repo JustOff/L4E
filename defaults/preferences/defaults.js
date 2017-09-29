@@ -31,12 +31,12 @@ pref("extensions.location4evar.progress.urlbar.css", "#33FF33");
 pref("extensions.location4evar.progress.urlbar.style", true);
 pref("extensions.location4evar.progress.urlbar.style.advanced", false);
 
-pref("extensions.location4evar.status", 1);
+pref("extensions.location4evar.status", 2);
 pref("extensions.location4evar.status.default", true);
 pref("extensions.location4evar.status.network", true);
 pref("extensions.location4evar.status.network.xhr", true);
 pref("extensions.location4evar.status.timeout", 10);
-pref("extensions.location4evar.status.linkOver", 1);
+pref("extensions.location4evar.status.linkOver", 2);
 pref("extensions.location4evar.status.linkOver.delay.show", 70);
 pref("extensions.location4evar.status.linkOver.delay.hide", 150);
 
