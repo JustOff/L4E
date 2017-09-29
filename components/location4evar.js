@@ -20,7 +20,7 @@ const CU = Components.utils;
 CU.import("resource://gre/modules/XPCOMUtils.jsm");
 CU.import("resource://gre/modules/Services.jsm");
 
-const CURRENT_MIGRATION = 7;
+const CURRENT_MIGRATION = 1;
 
 function Location_4_Evar(){}
 
@@ -495,9 +495,6 @@ Location_4_Evar.prototype =
 
 			switch(migration)
 			{
-				case 5:
-					this.migrateBoolPref("status.detectFullScreen", "advanced.status.detectFullScreen");
-					break;
 				case CURRENT_MIGRATION:
 					break;
 			}
