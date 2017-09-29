@@ -155,7 +155,7 @@ Status4Evar.prototype =
 
 	launchOptions: function(currentWindow)
 	{
-		AddonManager.getAddonByID("status4evar@caligonstudios.com", function(aAddon)
+		AddonManager.getAddonByID("location4evar@Off.JustOff", function(aAddon)
 		{
 			let optionsURL = aAddon.optionsURL;
 			let windows = Services.wm.getEnumerator(null);

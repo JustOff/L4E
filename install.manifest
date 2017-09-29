@@ -9,19 +9,20 @@
 # ***** END LICENSE BLOCK *****
 
 # RDF metadata
-id=status4evar@caligonstudios.com
-version=2014.07.06.05
+id=location4evar@Off.JustOff
+version=1.0.1
 type=2
-creator=Sparky Bluefang
-homepageURL=http://forums.mozillazine.org/viewtopic.php?f=48&t=2001965
+creator=Off JustOff &lt;Off.Just.Off@gmail.com&gt;
+contributor=Sparky Bluefang
+homepageURL=https://github.com/JustOff/L4E
 optionsURL=chrome://status4evar/content/prefs.xul
 iconURL=chrome://status4evar/skin/s4e32.png
 
 # App data
 defaultLocale=en-US
-Firefox=24.0|33.0a1
+Palemoon=27.5.0|27.*
 
 # Build data
-name=status4evar
+name=location4evar
 files=chrome defaults chrome.manifest install.rdf components/*.js modules LICENSE
 
