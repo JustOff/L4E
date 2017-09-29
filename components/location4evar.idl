@@ -14,8 +14,8 @@
 
 interface nsIDOMWindow;
 
-[scriptable, uuid(13b3595e-7bb5-4cfe-bbfa-82c900a4d7bf)]
-interface nsIStatus4Evar : nsISupports
+[scriptable, uuid(6cd980fb-3fb6-4f15-b8fe-e0de557960f9)]
+interface nsILocation4Evar : nsISupports
 {
 	readonly attribute boolean   addonbarBorderStyle;
 	readonly attribute boolean   addonbarCloseButton;

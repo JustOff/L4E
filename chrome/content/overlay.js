@@ -10,7 +10,7 @@
  * ***** END LICENSE BLOCK *****
 */
 
-if(!caligon) var caligon = {};
+if(!justoff) var justoff = {};
 
 window.addEventListener("load", function buildS4E()
 {
@@ -18,7 +18,7 @@ window.addEventListener("load", function buildS4E()
 
 	Components.utils.import("resource://location4evar/Status4Evar.jsm");
 
-	caligon.status4evar = new Status4Evar(window, gBrowser, gNavToolbox);
-	caligon.status4evar.setup();
+	justoff.status4evar = new Status4Evar(window, gBrowser, gNavToolbox);
+	justoff.status4evar.setup();
 }, false);
 

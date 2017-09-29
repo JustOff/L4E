@@ -18,7 +18,7 @@ const CC = Components.classes;
 const CI = Components.interfaces;
 const CU = Components.utils;
 
-const s4e_service = CC["@caligonstudios.com/status4evar;1"].getService(CI.nsIStatus4Evar);
+const s4e_service = CC["@off.justoff/location4evar;1"].getService(CI.nsILocation4Evar);
 const uuidService = CC["@mozilla.org/uuid-generator;1"].getService(CI.nsIUUIDGenerator);
 
 CU.import("resource://gre/modules/Services.jsm");
