@@ -209,3 +209,8 @@
 {
 	background: url(chrome://location4evar/skin/urlbar-over-link-arrow-rtl.png) no-repeat right center;
 }
+
+#urlbar .urlbar-origin-label
+{
+	-moz-padding-start: 1px;
+}
