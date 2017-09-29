@@ -27,7 +27,6 @@ CU.import("resource://gre/modules/AddonManager.jsm");
 
 CU.import("resource://location4evar/Status.jsm");
 CU.import("resource://location4evar/Progress.jsm");
-CU.import("resource://location4evar/Downloads.jsm");
 
 function Status4Evar(window, gBrowser, toolbox)
 {
@@ -38,7 +37,6 @@ function Status4Evar(window, gBrowser, toolbox)
 	this.getters = new S4EWindowGetters(this._window);
 	this.statusService = new S4EStatusService(this._window, s4e_service, this.getters);
 	this.progressMeter = new S4EProgressService(gBrowser, s4e_service, this.getters, this.statusService);
-	this.downloadStatus = new S4EDownloadService(this._window, gBrowser, s4e_service, this.getters);
 	this.sizeModeService = new SizeModeService(this._window, this);
 
 	this._window.addEventListener("unload", this, false);
@@ -53,7 +51,6 @@ Status4Evar.prototype =
 	getters:         null,
 	statusService:   null,
 	progressMeter:   null,
-	downloadStatus:  null,
 	sizeModeService: null,
 
 	setup: function()
@@ -85,11 +82,10 @@ Status4Evar.prototype =
 
 		this.getters.destroy();
 		this.statusService.destroy();
-		this.downloadStatus.destroy();
 		this.progressMeter.destroy();
 		this.sizeModeService.destroy();
 
-		["_window", "_toolbox", "getters", "statusService", "downloadStatus",
+		["_window", "_toolbox", "getters", "statusService",
 		"progressMeter", "sizeModeService"].forEach(function(prop)
 		{
 			delete this[prop];
@@ -122,8 +118,6 @@ Status4Evar.prototype =
 		{
 			status_label.value = this.getters.strings.getString("statusText");
 		}
-
-		this.downloadStatus.customizing(true);
 	},
 
 	updateWindow: function()
@@ -134,8 +128,6 @@ Status4Evar.prototype =
 		this.getters.resetGetters();
 		this.statusService.buildTextOrder();
 		this.statusService.buildBinding();
-		this.downloadStatus.init();
-		this.downloadStatus.customizing(false);
 
 		s4e_service.updateWindow(this._window);
 		// This also handles the following:
@@ -187,12 +179,6 @@ S4EWindowGetters.prototype =
 		[
 			["addonbar",               "addon-bar"],
 			["browserBottomBox",       "browser-bottombox"],
-			["downloadButton",         "status4evar-download-button"],
-			["downloadButtonTooltip",  "status4evar-download-tooltip"],
-			["downloadButtonProgress", "status4evar-download-progress-bar"],
-			["downloadButtonLabel",    "status4evar-download-label"],
-			["downloadButtonAnchor",   "status4evar-download-anchor"],
-			["downloadNotifyAnchor",   "status4evar-download-notification-anchor"],
 			["statusBar",              "status4evar-status-bar"],
 			["statusWidget",           "status4evar-status-widget"],
 			["statusWidgetLabel",      "status4evar-status-text"],
@@ -304,4 +290,3 @@ SizeModeService.prototype =
 
 	QueryInterface: XPCOMUtils.generateQI([ CI.nsIDOMEventListener ])
 };
-

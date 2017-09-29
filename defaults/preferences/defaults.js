@@ -15,18 +15,6 @@ pref("extensions.location4evar.advanced.status.detectFullScreen", true);
 pref("extensions.location4evar.advanced.status.detectVideo", true);
 pref("extensions.location4evar.advanced.urlbar.forceBinding", false);
 
-pref("extensions.location4evar.download.button.action", 1);
-pref("extensions.location4evar.download.button.action.command", "");
-pref("extensions.location4evar.download.color.active", "#33FF33");
-pref("extensions.location4evar.download.color.paused", "#808080");
-pref("extensions.location4evar.download.force", true);
-pref("extensions.location4evar.download.label", 0);
-pref("extensions.location4evar.download.label.force", false);
-pref("extensions.location4evar.download.notify.animate", true);
-pref("extensions.location4evar.download.notify.timeout", 60);
-pref("extensions.location4evar.download.progress", 1);
-pref("extensions.location4evar.download.tooltip", 1);
-
 pref("extensions.location4evar.firstRun", true);
 
 //pref("extensions.location4evar.progress.tab", 1);

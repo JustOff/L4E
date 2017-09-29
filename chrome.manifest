@@ -30,7 +30,6 @@ style   chrome://global/content/customizeToolbar.xul chrome://location4evar/cont
 style   chrome://global/content/customizeToolbar.xul chrome://location4evar/skin/overlay.css
 style   chrome://global/content/customizeToolbar.xul chrome://location4evar-os/skin/overlay.css
 style   chrome://global/content/customizeToolbar.xul chrome://location4evar-os/skin/legacy.css
-style   chrome://location4evar/content/prefs.xul     chrome://location4evar/skin/version/prefs26.css
 
 # XPCOM
 interfaces components/location4evar.xpt

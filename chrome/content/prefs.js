@@ -353,49 +353,6 @@ var status4evarPrefs =
 	},
 
 //
-// Download progress management
-//
-	get downloadProgressCheck()
-	{
-		delete this.downloadProgressCheck;
-		return this.downloadProgressCheck = document.getElementById("status4evar-download-progress-check");
-	},
-
-	get downloadProgressPref()
-	{
-		delete this.downloadPRogressPref;
-		return this.downloadPRogressPref = document.getElementById("status4evar-pref-download-progress");
-	},
-
-	get downloadProgressColorActivePref()
-	{
-		delete this.downloadProgressActiveColorPref;
-		return this.downloadProgressActiveColorPref = document.getElementById("status4evar-pref-download-color-active");
-	},
-
-	get downloadProgressColorPausedPref()
-	{
-		delete this.downloadProgressPausedColorPref;
-		return this.downloadProgressPausedColorPref = document.getElementById("status4evar-pref-download-color-paused");
-	},
-
-	downloadProgressSync: function()
-	{
-		let val = this.downloadProgressPref.value;
-		this.downloadProgressColorActivePref.disabled = (val == 0);
-		this.downloadProgressColorPausedPref.disabled = (val == 0);
-		this.downloadProgressPref.disabled = (val == 0);
-		this.downloadProgressCheck.checked = (val != 0);
-		return ((val == 0) ? 1 : val);
-	},
-
-	downloadProgressToggle: function()
-	{
-		let enabled = this.downloadProgressCheck.checked;
-		this.downloadProgressPref.value = ((enabled) ? 1 : 0);
-	},
-
-//
 // Advanced prefs warning page
 //
 	get advancedDeck()
@@ -436,18 +393,6 @@ var status4evarPrefs =
 		return this.statusUrlbarPositionValue = document.getElementById("status4evar-status-urlbar-position-value");
 	},
 
-	get downloadButtonActionCommandPref()
-	{
-		delete this.downloadButtonActionCommandPref;
-		return this.downloadButtonActionCommandPref = document.getElementById("status4evar-pref-download-button-action-command");
-	},
-
-	get downloadButtonActionThirdPartyItem()
-	{
-		delete this.downloadButtonActionThirdPartyItem;
-		return this.downloadButtonActionThirdPartyItem = document.getElementById("status4evar-download-button-action-menu-thirdparty");
-	},
-
 	onPrefWindowLoad: function()
 	{
 		let showWarning = this.advancedShowWarningPref.value;
@@ -460,11 +405,6 @@ var status4evarPrefs =
 		if(window.getComputedStyle(this.statusUrlbarPositionValue).direction == "ltr")
 		{
 			this.statusUrlbarPositionValue.setAttribute("dir", "reverse");
-		}
-
-		if(!this.downloadButtonActionCommandPref.value)
-		{
-			this.downloadButtonActionThirdPartyItem.disabled = true;
 		}
 	},
 

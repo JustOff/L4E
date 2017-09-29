@@ -2,7 +2,6 @@
 
 <!ENTITY status4evar.pane.status "Status">
 <!ENTITY status4evar.pane.progress "Progress">
-<!ENTITY status4evar.pane.download "Download">
 <!ENTITY status4evar.pane.addonbar "Add-on Bar">
 <!ENTITY status4evar.pane.advanced "Advanced">
 
@@ -13,7 +12,6 @@
 <!ENTITY status4evar.tab.tabs "Tabs">
 
 <!ENTITY status4evar.option.none "None">
-<!ENTITY status4evar.option.nothing "Nothing">
 <!ENTITY status4evar.option.toolbar "Toolbar">
 <!ENTITY status4evar.option.urlbar "Location Bar">
 <!ENTITY status4evar.option.popup "Popup">
@@ -21,9 +19,6 @@
 <!ENTITY status4evar.option.bottom "Bottom">
 <!ENTITY status4evar.option.top "Top">
 <!ENTITY status4evar.option.fill "Fill">
-<!ENTITY status4evar.option.dlcount "Download count">
-<!ENTITY status4evar.option.dltime "Time remaining">
-<!ENTITY status4evar.option.both "Both">
 <!ENTITY status4evar.option.right "Right">
 <!ENTITY status4evar.option.left "Left">
 <!ENTITY status4evar.option.fixed "Fixed">
@@ -37,10 +32,6 @@
 <!ENTITY status4evar.option.no-repeat "No Repeat">
 <!ENTITY status4evar.option.space "Space">
 <!ENTITY status4evar.option.round "Round">
-<!ENTITY status4evar.option.firefoxdefault "Firefox default">
-<!ENTITY status4evar.option.download.library "Library">
-<!ENTITY status4evar.option.download.tab "Tab">
-<!ENTITY status4evar.option.download.thirdparty "3rd Party">
 
 <!ENTITY status4evar.unit.milliseconds "milliseconds">
 <!ENTITY status4evar.unit.seconds "seconds">
@@ -92,23 +83,6 @@
 <!ENTITY status4evar.editor.css.image.offset "Offset">
 
 
-
-<!ENTITY status4evar.download.button.action.label "Download status button action:">
-<!ENTITY status4evar.download.force.label "Always show the Download Status button">
-<!ENTITY status4evar.download.label.force.label "Show button text in icons-only mode">
-<!ENTITY status4evar.download.label.label "Download status button text:">
-<!ENTITY status4evar.download.tooltip.label "Download status button tooltip:">
-<!ENTITY status4evar.download.progress.label "Show download progress on the button">
-<!ENTITY status4evar.download.progress.average.label "Show average download completion">
-<!ENTITY status4evar.download.progress.max.label "Show most complete download">
-<!ENTITY status4evar.download.progress.min.label "Show least complete download">
-<!ENTITY status4evar.download.color.active.label "Progress color for active downloads:">
-<!ENTITY status4evar.download.color.paused.label "Progress color for paused downloads:">
-<!ENTITY status4evar.download.notify.animate.label "Animate button when download completes">
-<!ENTITY status4evar.download.notify.timeout.label "Highlight button when download completes:">
-
-
-
 <!ENTITY status4evar.advanced.warning "These advanced settings may cause issues with Status-4-Evar or other extensions. Modify at your own risk.">
 
 <!ENTITY status4evar.advanced.urlbar.forceBinding "Attempt to force the the Location Bar XBL binding.">
@@ -116,6 +90,4 @@
 
 <!ENTITY status4evar.advanced.status.detectFullScreen "Detect full-screen mode and show links/status appropriately.">
 <!ENTITY status4evar.advanced.status.detectVideo "Hide status popup in full-screen HTML5 video.">
-
-<!ENTITY toolkit.classic.download.window.label "Use classic download window">
 

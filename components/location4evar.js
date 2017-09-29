@@ -39,18 +39,6 @@ Location_4_Evar.prototype =
 	advancedStatusDetectVideo:      true,
 	advancedUrlbarForceBinding:     false,
 
-	downloadButtonAction:           1,
-	downloadButtonActionCommand:    "",
-	downloadColorActive:            null,
-	downloadColorPaused:            null,
-	downloadForce:                  false,
-	downloadLabel:                  0,
-	downloadLabelForce:             true,
-	downloadNotifyAnimate:          true,
-	downloadNotifyTimeout:          60000,
-	downloadProgress:               1,
-	downloadTooltip:                1,
-
 	firstRun:                       true,
 
 	progressToolbarCSS:             null,
@@ -109,137 +97,6 @@ Location_4_Evar.prototype =
 				{
 					this.setBoolElementAttribute(urlbar, "s4eforce", this.advancedUrlbarForceBinding);
 				}
-			}
-		},
-
-		"download.button.action":
-		{
-			update: function()
-			{
-				this.downloadButtonAction = this.prefs.getIntPref("download.button.action");
-			},
-			updateWindow: function(win)
-			{
-				win.justoff.status4evar.downloadStatus.updateBinding();
-			}
-		},
-
-		"download.button.action.command":
-		{
-			update: function()
-			{
-				this.downloadButtonActionCommand = this.prefs.getCharPref("download.button.action.command");
-			}
-		},
-
-		"download.color.active":
-		{
-			update: function()
-			{
-				this.downloadColorActive = this.prefs.getCharPref("download.color.active");
-			},
-			updateDynamicStyle: function(sheet)
-			{
-				sheet.cssRules[4].style.backgroundColor = this.downloadColorActive;
-			}
-		},
-
-		"download.color.paused":
-		{
-			update: function()
-			{
-				this.downloadColorPaused = this.prefs.getCharPref("download.color.paused");
-			},
-			updateDynamicStyle: function(sheet)
-			{
-				sheet.cssRules[5].style.backgroundColor = this.downloadColorPaused;
-			}
-		},
-
-		"download.force":
-		{
-			update: function()
-			{
-				this.downloadForce = this.prefs.getBoolPref("download.force");
-			},
-			updateWindow: function(win)
-			{
-				let download_button = win.justoff.status4evar.getters.downloadButton;
-				if(download_button)
-				{
-					this.setBoolElementAttribute(download_button, "forcevisible", this.downloadForce);
-				}
-
-				let download_notify_anchor = win.justoff.status4evar.getters.downloadNotifyAnchor;
-				this.setBoolElementAttribute(download_notify_anchor, "forcevisible", this.downloadForce);
-			}
-		},
-
-		"download.label":
-		{
-			update: function()
-			{
-				this.downloadLabel = this.prefs.getIntPref("download.label");
-			},
-			updateWindow: function(win)
-			{
-				win.justoff.status4evar.downloadStatus.updateButton();
-			}
-		},
-
-		"download.label.force":
-		{
-			update: function()
-			{
-				this.downloadLabelForce = this.prefs.getBoolPref("download.label.force");
-			},
-			updateWindow: function(win)
-			{
-				let download_button = win.justoff.status4evar.getters.downloadButton;
-				if(download_button)
-				{
-					this.setBoolElementAttribute(download_button, "forcelabel", this.downloadLabelForce);
-				}
-			}
-		},
-
-		"download.notify.animate":
-		{
-			update: function()
-			{
-				this.downloadNotifyAnimate = this.prefs.getBoolPref("download.notify.animate");
-			}
-		},
-
-		"download.notify.timeout":
-		{
-			update: function()
-			{
-				this.downloadNotifyTimeout = (this.prefs.getIntPref("download.notify.timeout") * 1000);
-			}
-		},
-
-		"download.progress":
-		{
-			update: function()
-			{
-				this.downloadProgress = this.prefs.getIntPref("download.progress");
-			},
-			updateWindow: function(win)
-			{
-				win.justoff.status4evar.downloadStatus.updateButton();
-			}
-		},
-
-		"download.tooltip":
-		{
-			update: function()
-			{
-				this.downloadTooltip = this.prefs.getIntPref("download.tooltip");
-			},
-			updateWindow: function(win)
-			{
-				win.justoff.status4evar.downloadStatus.updateButton();
 			}
 		},
 
@@ -636,28 +493,6 @@ Location_4_Evar.prototype =
 			{
 				case 5:
 					this.migrateBoolPref("status.detectFullScreen", "advanced.status.detectFullScreen");
-					break;
-				case 6:
-					let oldDownloadAction = this.prefs.getIntPref("download.button.action");
-					let newDownloadAction = 1;
-					switch(oldDownloadAction)
-					{
-						case 2:
-							newDownloadAction = 1;
-							break;
-						case 3:
-							newDownloadAction = 2;
-							break;
-						case 4:
-							newDownloadAction = 1;
-							break;
-					}
-					this.prefs.setIntPref("download.button.action", newDownloadAction);
-
-					if(oldDownloadAction == 4 && Services.vc.compare("26.0", Services.appinfo.version) > 0)
-					{
-						this.prefs.setBoolPref("browser.download.useToolkitUI", true);
-					}
 					break;
 				case CURRENT_MIGRATION:
 					break;
