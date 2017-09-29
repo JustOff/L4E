@@ -12,7 +12,7 @@
 
 "use strict";
 
-const EXPORTED_SYMBOLS = ["Status4Evar"];
+const EXPORTED_SYMBOLS = ["Location4Evar"];
 
 const CC = Components.classes;
 const CI = Components.interfaces;
@@ -28,7 +28,7 @@ CU.import("resource://gre/modules/AddonManager.jsm");
 CU.import("resource://location4evar/Status.jsm");
 CU.import("resource://location4evar/Progress.jsm");
 
-function Status4Evar(window, gBrowser, toolbox)
+function Location4Evar(window, gBrowser, toolbox)
 {
 	this._id = uuidService.generateUUID();
 	this._window = window;
@@ -42,7 +42,7 @@ function Status4Evar(window, gBrowser, toolbox)
 	this._window.addEventListener("unload", this, false);
 }
 
-Status4Evar.prototype =
+Location4Evar.prototype =
 {
 	_id: null,
 	_window:  null,

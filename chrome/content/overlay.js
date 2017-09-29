@@ -16,9 +16,9 @@ window.addEventListener("load", function buildS4E()
 {
 	window.removeEventListener("load", buildS4E, false);
 
-	Components.utils.import("resource://location4evar/Status4Evar.jsm");
+	Components.utils.import("resource://location4evar/Location4Evar.jsm");
 
-	justoff.status4evar = new Status4Evar(window, gBrowser, gNavToolbox);
+	justoff.status4evar = new Location4Evar(window, gBrowser, gNavToolbox);
 	justoff.status4evar.setup();
 }, false);
 
