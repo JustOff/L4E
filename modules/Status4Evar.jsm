@@ -25,10 +25,10 @@ CU.import("resource://gre/modules/Services.jsm");
 CU.import("resource://gre/modules/XPCOMUtils.jsm");
 CU.import("resource://gre/modules/AddonManager.jsm");
 
-CU.import("resource://status4evar/Status.jsm");
-CU.import("resource://status4evar/Progress.jsm");
-CU.import("resource://status4evar/Downloads.jsm");
-CU.import("resource://status4evar/Toolbars.jsm");
+CU.import("resource://location4evar/Status.jsm");
+CU.import("resource://location4evar/Progress.jsm");
+CU.import("resource://location4evar/Downloads.jsm");
+CU.import("resource://location4evar/Toolbars.jsm");
 
 function Status4Evar(window, gBrowser, toolbox)
 {

@@ -20,7 +20,7 @@ var status4evarPrefs =
 		for(let i = 0; i < styleSheets.length; i++)
 		{
 			let styleSheet = styleSheets[i];
-			if(styleSheet.href == "chrome://status4evar/skin/dynamic.css")
+			if(styleSheet.href == "chrome://location4evar/skin/dynamic.css")
 			{
 				delete this.dynamicProgressStyle;
 				return this.dynamicProgressStyle = styleSheet;

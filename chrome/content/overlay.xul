@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE overlay SYSTEM "chrome://status4evar/locale/overlay.dtd">
+<!DOCTYPE overlay SYSTEM "chrome://location4evar/locale/overlay.dtd">
 
 <!--
    - ***** BEGIN LICENSE BLOCK *****
@@ -13,19 +13,19 @@
    - ***** END LICENSE BLOCK *****
 -->
 
-<?xml-stylesheet href="chrome://status4evar/content/overlay.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://status4evar/skin/overlay.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://status4evar-os/skin/overlay.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://status4evar/skin/dynamic.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar/content/overlay.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar/skin/overlay.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar-os/skin/overlay.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar/skin/dynamic.css" type="text/css" ?>
 
 <overlay id="status4evar-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<stringbundleset id="stringbundleset">
-		<stringbundle id="bundle_status4evar" src="chrome://status4evar/locale/overlay.properties" />
+		<stringbundle id="bundle_status4evar" src="chrome://location4evar/locale/overlay.properties" />
 	</stringbundleset>
 
-	<script type="application/javascript" src="chrome://status4evar/content/overlay.js" />
+	<script type="application/javascript" src="chrome://location4evar/content/overlay.js" />
 
 	<commandset>
 		<command id="S4E:Options" oncommand="caligon.status4evar.launchOptions(window);"/>

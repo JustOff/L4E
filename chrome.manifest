@@ -9,30 +9,30 @@
 # ***** END LICENSE BLOCK *****
 
 # Paths
-content  status4evar chrome/content/
-resource status4evar modules/
+content  location4evar chrome/content/
+resource location4evar modules/
 
 # Locales
-locale status4evar en-US chrome/locale/en-US/
+locale location4evar en-US chrome/locale/en-US/
 
 # Skin
-skin status4evar    classic/1.0 chrome/skin/all/
-skin status4evar-os classic/1.0 chrome/skin/gnomestripe/
-skin status4evar-os classic/1.0 chrome/skin/winstripe/   os=WINNT
-skin status4evar-os classic/1.0 chrome/skin/pinstripe/   os=Darwin
+skin location4evar    classic/1.0 chrome/skin/all/
+skin location4evar-os classic/1.0 chrome/skin/gnomestripe/
+skin location4evar-os classic/1.0 chrome/skin/winstripe/   os=WINNT
+skin location4evar-os classic/1.0 chrome/skin/pinstripe/   os=Darwin
 
 # Overlays
-overlay chrome://browser/content/browser.xul   chrome://status4evar/content/overlay.xul
-overlay chrome://browser/content/browser.xul   chrome://status4evar/content/legacy.xul
-overlay chrome://status4evar/content/prefs.xul chrome://status4evar/content/prefsLegacy.xul
+overlay chrome://browser/content/browser.xul     chrome://location4evar/content/overlay.xul
+overlay chrome://browser/content/browser.xul     chrome://location4evar/content/legacy.xul
+overlay chrome://location4evar/content/prefs.xul chrome://location4evar/content/prefsLegacy.xul
 
 # Styles
-style   chrome://global/content/customizeToolbar.xul chrome://status4evar/content/overlay.css
-style   chrome://global/content/customizeToolbar.xul chrome://status4evar/skin/overlay.css
-style   chrome://global/content/customizeToolbar.xul chrome://status4evar-os/skin/overlay.css
-style   chrome://global/content/customizeToolbar.xul chrome://status4evar-os/skin/legacy.css
-style   chrome://status4evar/content/prefs.xul       chrome://status4evar/skin/version/prefs26.css
-style   chrome://status4evar/content/prefs.xul       chrome://status4evar/skin/version/prefs28.css
+style   chrome://global/content/customizeToolbar.xul chrome://location4evar/content/overlay.css
+style   chrome://global/content/customizeToolbar.xul chrome://location4evar/skin/overlay.css
+style   chrome://global/content/customizeToolbar.xul chrome://location4evar-os/skin/overlay.css
+style   chrome://global/content/customizeToolbar.xul chrome://location4evar-os/skin/legacy.css
+style   chrome://location4evar/content/prefs.xul     chrome://location4evar/skin/version/prefs26.css
+style   chrome://location4evar/content/prefs.xul     chrome://location4evar/skin/version/prefs28.css
 
 # XPCOM
 interfaces components/status4evar.xpt

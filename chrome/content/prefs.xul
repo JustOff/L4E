@@ -2,7 +2,7 @@
 <!DOCTYPE prefwindow [
 	<!ENTITY % configDTD SYSTEM "chrome://global/locale/config.dtd">
 	%configDTD;
-	<!ENTITY % prefsDTD SYSTEM "chrome://status4evar/locale/prefs.dtd">
+	<!ENTITY % prefsDTD SYSTEM "chrome://location4evar/locale/prefs.dtd">
 	%prefsDTD;
 ]>
 
@@ -21,23 +21,23 @@
 <?xml-stylesheet href="chrome://global/skin/config.css" type="text/css" ?>
 <?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css" ?>
 
-<?xml-stylesheet href="chrome://status4evar/content/overlay.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://status4evar/skin/overlay.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://status4evar-os/skin/overlay.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://status4evar/skin/dynamic.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar/content/overlay.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar/skin/overlay.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar-os/skin/overlay.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar/skin/dynamic.css" type="text/css" ?>
 
-<?xml-stylesheet href="chrome://status4evar/content/prefs.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://status4evar/skin/prefs.css" type="text/css" ?>
-<?xml-stylesheet href="chrome://status4evar-os/skin/prefs.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar/content/prefs.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar/skin/prefs.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://location4evar-os/skin/prefs.css" type="text/css" ?>
 
 <prefwindow id="status4evar-prefs" title="&status4evar.window.title;"
             xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
             onload="status4evarPrefs.onPrefWindowLoad();" onunload="status4evarPrefs.onPrefWindowUnLoad();">
 
 	<stringbundleset id="stringbundleset">  
-		<stringbundle id="bundle_status4evar" src="chrome://status4evar/locale/prefs.properties" />   
+		<stringbundle id="bundle_status4evar" src="chrome://location4evar/locale/prefs.properties" />   
 	</stringbundleset>
-	<script type="application/javascript" src="chrome://status4evar/content/prefs.js" />
+	<script type="application/javascript" src="chrome://location4evar/content/prefs.js" />
  
 	<prefpane id="status4evar-pane-status" label="&status4evar.pane.status;">
 		<preferences>
@@ -266,7 +266,7 @@
 											<hbox id="identity-box-inner" align="center">
 												<stack id="page-proxy-stack">
 													<image id="page-proxy-favicon" validate="never" pageproxystate="valid"
-													       src="chrome://status4evar/skin/s4e16.png" />
+													       src="chrome://location4evar/skin/s4e16.png" />
 												</stack>
 											</hbox>
 										</box>

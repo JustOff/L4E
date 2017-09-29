@@ -18,12 +18,12 @@
 
 #urlbar
 {
-	-moz-binding: url("chrome://status4evar/content/urlbarBindings.xml#urlbar");
+	-moz-binding: url("chrome://location4evar/content/urlbarBindings.xml#urlbar");
 }
 
 #urlbar[s4eforce="true"]
 {
-	-moz-binding: url("chrome://status4evar/content/urlbarBindings.xml#urlbar") !important;
+	-moz-binding: url("chrome://location4evar/content/urlbarBindings.xml#urlbar") !important;
 }
 
 /*
@@ -32,6 +32,6 @@
 
 statuspanel
 {
-	-moz-binding: url("chrome://status4evar/content/tabbrowser.xml#statuspanel");
+	-moz-binding: url("chrome://location4evar/content/tabbrowser.xml#statuspanel");
 }
 

@@ -66,12 +66,12 @@
 
 #status4evar-options-button
 {
-	list-style-image: url("chrome://status4evar/skin/s4e24.png");
+	list-style-image: url("chrome://location4evar/skin/s4e24.png");
 }
 
 toolbar[iconsize="small"] #status4evar-options-button
 {
-	list-style-image: url("chrome://status4evar/skin/s4e16.png");
+	list-style-image: url("chrome://location4evar/skin/s4e16.png");
 }
 
 /*
@@ -106,7 +106,7 @@ toolbar[mode="icons"] #status4evar-download-button[forcelabel="true"] > label
 
 #status4evar-download-progress-bar[pmType$="unknown"] > .progress-bar
 {
-	background-image: url("chrome://status4evar/skin/pulse.png");
+	background-image: url("chrome://location4evar/skin/pulse.png");
 }
 
 #status4evar-download-notification-container
@@ -341,12 +341,12 @@ splitter.status4evar-status-splitter:not(:hover)
 
 #urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(ltr)
 {
-	background: url(chrome://status4evar/skin/urlbar-over-link-arrow.png) no-repeat left center;
+	background: url(chrome://location4evar/skin/urlbar-over-link-arrow.png) no-repeat left center;
 }
 
 #urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(rtl)
 {
-	background: url(chrome://status4evar/skin/urlbar-over-link-arrow-rtl.png) no-repeat right center;
+	background: url(chrome://location4evar/skin/urlbar-over-link-arrow-rtl.png) no-repeat right center;
 }
 
 /*
