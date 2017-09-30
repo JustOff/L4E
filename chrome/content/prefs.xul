@@ -24,11 +24,13 @@
 <?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css" ?>
 
 <?xml-stylesheet href="chrome://location4evar/content/overlay.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://browser/skin/statusbar/overlay.css" type="text/css" ?>
 <?xml-stylesheet href="chrome://location4evar/skin/overlay.css" type="text/css" ?>
 <?xml-stylesheet href="chrome://location4evar-os/skin/overlay.css" type="text/css" ?>
 <?xml-stylesheet href="chrome://location4evar/skin/dynamic.css" type="text/css" ?>
 
-<?xml-stylesheet href="chrome://location4evar/content/prefs.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://browser/content/statusbar/prefs.css" type="text/css" ?>
+<?xml-stylesheet href="chrome://browser/skin/statusbar/prefs.css" type="text/css" ?>
 <?xml-stylesheet href="chrome://location4evar/skin/prefs.css" type="text/css" ?>
 
 <prefwindow id="location4evar-prefs" title="&status4evar.window.title;"
