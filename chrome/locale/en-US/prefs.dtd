@@ -1,6 +1,12 @@
 <!ENTITY status4evar.tab.urlbar "Location Bar">
 <!ENTITY status4evar.option.urlbar "Location Bar">
 
+<!ENTITY status4evar.option.fill "Fill">
+<!ENTITY status4evar.option.fixed "Fixed">
+
+<!ENTITY status4evar.status.currentUrl "Current Location">
+<!ENTITY status4evar.status.statusText "Status Text">
+
 <!ENTITY status4evar.status.urlbar.align.label "Status alignment:">
 <!ENTITY status4evar.status.urlbar.color.label "Status color:">
 
