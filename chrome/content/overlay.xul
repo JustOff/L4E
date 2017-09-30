@@ -37,7 +37,7 @@
 	</menupopup>
 
 	<menupopup id="appmenu_customizeMenu">
-		<menuitem id="l4e-options-app" command="S4E:Options"
+		<menuitem id="l4e-options-app" command="L4E:Options"
 			label="&status4evar.menu.options.label;"/>
 	</menupopup>
 
