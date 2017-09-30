@@ -1,0 +1,9 @@
+Location-4-Evar add-on is derived from the Status-4-Evar Firefox extension,
+and licensed under the Mozilla Public License 2.0.
+
+Copyright (C) 2017 JustOff <Off.Just.Off@gmail.com>. All Rights Reserved.
+
+Original code by the Initial Developer is Copyright (C) 2010-2014
+Matthew Turnbull (sparky@bluefang-logic.com). All Rights Reserved.
+Portions of this Original Code originated from Mozilla Firefox and are
+Copyright (C) the Mozilla Foundation and their respective developers.

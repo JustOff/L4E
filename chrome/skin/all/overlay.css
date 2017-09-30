@@ -1,27 +1,6 @@
-/*
- * ***** BEGIN LICENSE BLOCK *****
- * 
- * This Source Code Form is subject to the terms of the Mozilla Public
+/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
- * Original code copyright (C) 2010 Margaret Leibovic <margaret.leibovic@gmail.com>. All Rights Reserved.
- * Original code copyright (C) 2010 Drew Willcoxon <adw@mozilla.com>. All Rights Reserved.
- * Original code copyright (C) 2013 Paolo Amadini <paolo.mozmail@amadzone.org>. All Rights Reserved.
- * Original code copyright (C) 2013 Gijs Kruitbosch <gijskruitbosch@gmail.com>. All Rights Reserved.
- * Copyright (C) 2010-2014 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
- * ***** END LICENSE BLOCK *****
- * 
- * Original status overlay implementation by Drew Willcoxon.
- * Adapted from the back-out patch:
- * https://hg.mozilla.org/mozilla-central/rev/d384e2adf22e
- * 
- * Original progress line code by Margaret Leibovic.
- * Adapted from the back-out patch:
- * https://hg.mozilla.org/mozilla-central/rev/42270894db65
- * 
-*/
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");

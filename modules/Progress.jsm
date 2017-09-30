@@ -1,18 +1,6 @@
-/*
- * ***** BEGIN LICENSE BLOCK *****
- * 
- * This Source Code Form is subject to the terms of the Mozilla Public
+/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
- * Original code copyright (C) Mozilla Foundation. All Rights Reserved.
- * Copyright (C) 2010-2013 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
- * ***** END LICENSE BLOCK *****
- *
- * Progress listener code based on Mozilla Foundation code:
- * https://hg.mozilla.org/mozilla-central/file/9962128c19d6/browser/base/content/browser.js#l4130
-*/
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 "use strict";
 

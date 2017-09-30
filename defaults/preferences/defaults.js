@@ -1,14 +1,6 @@
-/*
- * ***** BEGIN LICENSE BLOCK *****
- * 
- * This Source Code Form is subject to the terms of the Mozilla Public
+/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
- * Copyright (C) 2010-2014 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
- * ***** END LICENSE BLOCK *****
-*/
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 pref("extensions.location4evar.advanced.showWarning", true);
 pref("extensions.location4evar.advanced.status.detectFullScreen", true);
@@ -16,10 +8,6 @@ pref("extensions.location4evar.advanced.status.detectVideo", true);
 pref("extensions.location4evar.advanced.urlbar.forceBinding", false);
 
 pref("extensions.location4evar.firstRun", true);
-
-//pref("extensions.location4evar.progress.tab", 1);
-//pref("extensions.location4evar.progress.tab.css", "#33FF33");
-//pref("extensions.location4evar.progress.tab.style", true);
 
 pref("extensions.location4evar.progress.toolbar.css", "#33FF33");
 pref("extensions.location4evar.progress.toolbar.force", false);
@@ -48,4 +36,3 @@ pref("extensions.location4evar.status.urlbar.position", 33);
 
 pref("extensions.location4evar.status.popup.invertMirror", false);
 pref("extensions.location4evar.status.popup.mouseMirror", true);
-
