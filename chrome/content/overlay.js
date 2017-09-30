@@ -12,9 +12,9 @@
 
 if(!justoff) var justoff = {};
 
-window.addEventListener("load", function buildS4E()
+window.addEventListener("load", function buildL4E()
 {
-	window.removeEventListener("load", buildS4E, false);
+	window.removeEventListener("load", buildL4E, false);
 
 	Components.utils.import("resource://location4evar/Location4Evar.jsm");
 
