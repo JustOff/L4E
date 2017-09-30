@@ -30,7 +30,7 @@
             onload="status4evarPrefs.onPrefWindowLoad();" onunload="status4evarPrefs.onPrefWindowUnLoad();">
 
 	<stringbundleset id="stringbundleset">  
-		<stringbundle id="bundle_location4evar" src="chrome://browser/locale/statusbar/prefs.properties" />
+		<stringbundle id="bundle_status4evar" src="chrome://browser/locale/statusbar/prefs.properties" /> 
 	</stringbundleset>
 	<script type="application/javascript" src="chrome://location4evar/content/prefs.js" />
  
