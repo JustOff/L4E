@@ -25,7 +25,7 @@ skin location4evar-os classic/1.0 chrome/skin/pinstripe/   os=Darwin
 overlay chrome://browser/content/browser.xul     chrome://location4evar/content/overlay.xul
 
 # Override
-override chrome://browser/content/statusbar/prefs.xul   chrome://location4evar/content/s4e-prefs.xul
+override chrome://browser/content/statusbar/prefs.xul   chrome://location4evar/content/prefs.xul
 
 # XPCOM
 interfaces components/location4evar.xpt
