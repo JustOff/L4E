@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:name>Location-4-Evar</em:name>
+		<em:description>Show status and progress indicators in location bar</em:description>
+		<em:id>location4evar@Off.JustOff</em:id>
+		<em:version>1.0.1</em:version>
+		<em:creator>Off JustOff &lt;Off.Just.Off@gmail.com&gt;</em:creator>
+		<em:contributor>Sparky Bluefang</em:contributor>
+		<em:type>2</em:type>
+		<em:homepageURL>https://github.com/JustOff/L4E</em:homepageURL>
+		<em:optionsURL>chrome://location4evar/content/prefs.xul</em:optionsURL>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+				<em:minVersion>27.5.0</em:minVersion>
+				<em:maxVersion>27.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+</RDF>
