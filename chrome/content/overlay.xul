@@ -13,10 +13,6 @@
 <overlay id="location4evar-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-	<stringbundleset id="stringbundleset">
-		<stringbundle id="bundle_status4evar" src="chrome://browser/locale/statusbar/overlay.properties" />
-	</stringbundleset>
-
 	<script type="application/javascript" src="chrome://location4evar/content/overlay.js" />
 
 	<commandset>
