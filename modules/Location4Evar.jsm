@@ -47,11 +47,8 @@ Location4Evar.prototype =
 
 	setup: function()
 	{
-		if(Services.vc.compare("28.*", Services.appinfo.version) >= 0)
-		{
-			this._toolbox.addEventListener("beforecustomization", this, false);
-			this._toolbox.addEventListener("aftercustomization", this, false);
-		}
+		this._toolbox.addEventListener("beforecustomization", this, false);
+		this._toolbox.addEventListener("aftercustomization", this, false);
 
 		this.updateWindow();
 
@@ -66,11 +63,8 @@ Location4Evar.prototype =
 	destroy: function()
 	{
 		this._window.removeEventListener("unload", this, false);
-		if(Services.vc.compare("28.*", Services.appinfo.version) >= 0)
-		{
-			this._toolbox.removeEventListener("aftercustomization", this, false);
-			this._toolbox.removeEventListener("beforecustomization", this, false);
-		}
+		this._toolbox.removeEventListener("aftercustomization", this, false);
+		this._toolbox.removeEventListener("beforecustomization", this, false);
 
 		this.getters.destroy();
 		this.statusService.destroy();
