@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE overlay SYSTEM "chrome://browser/locale/statusbar/statusbar-overlay.dtd">
 
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
      License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -14,20 +13,6 @@
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<script type="application/javascript" src="chrome://location4evar/content/overlay.js" />
-
-	<commandset>
-		<command id="L4E:Options" oncommand="justoff.status4evar.launchOptions(window);"/>
-	</commandset>
-
-	<menupopup id="menu_ToolsPopup">
-		<menuitem id="statusbar-options-fx" command="L4E:Options"
-			label="&status4evar.menu.options.label;"/>
-	</menupopup>
-
-	<menupopup id="appmenu_customizeMenu">
-		<menuitem id="statusbar-options-app" command="L4E:Options"
-			label="&status4evar.menu.options.label;"/>
-	</menupopup>
 
 	<textbox id="urlbar" pmpack="end">
 		<progressmeter id="urlbar-progress-alt"  mode="normal" value="0" collapsed="true" />

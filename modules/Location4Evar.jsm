@@ -125,36 +125,6 @@ Location4Evar.prototype =
 		// This also handles the following:
 		// * buildTextOrder()
 		// * updateStatusField(true)
-	},
-
-	launchOptions: function(currentWindow)
-	{
-		AddonManager.getAddonByID("location4evar@Off.JustOff", function(aAddon)
-		{
-			let optionsURL = aAddon.optionsURL;
-			let windows = Services.wm.getEnumerator(null);
-			while (windows.hasMoreElements())
-			{
-				let win = windows.getNext();
-				if (win.document.documentURI == optionsURL)
-				{
-					win.focus();
-					return;
-				}
-			}
-
-			let features = "chrome,titlebar,toolbar,centerscreen";
-			try
-			{
-				let instantApply = Services.prefs.getBoolPref("browser.preferences.instantApply");
-				features += instantApply ? ",dialog=no" : ",modal";
-			}
-			catch(e)
-			{
-				features += ",modal";
-			}
-			currentWindow.openDialog(optionsURL, "", features);
-		});
 	}
 
 };
