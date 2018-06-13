@@ -4,7 +4,7 @@
 		<em:name>Location-4-Evar</em:name>
 		<em:description>Show status and progress indicators in location bar</em:description>
 		<em:id>location4evar@Off.JustOff</em:id>
-		<em:version>1.0.4</em:version>
+		<em:version>1.0.5</em:version>
 		<em:creator>Off JustOff &lt;Off.Just.Off@gmail.com&gt;</em:creator>
 		<em:contributor>Sparky Bluefang</em:contributor>
 		<em:type>2</em:type>
@@ -15,7 +15,7 @@
 			<Description>
 				<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
 				<em:minVersion>27.5.0</em:minVersion>
-				<em:maxVersion>27.*</em:maxVersion>
+				<em:maxVersion>28.*</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 	</Description>
