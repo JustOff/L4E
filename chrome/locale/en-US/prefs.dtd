@@ -13,6 +13,8 @@
 <!ENTITY status4evar.progress.urlbar.enable.label "Show progress in the Location Bar">
 <!ENTITY status4evar.progress.urlbar.line.label "Line style:">
 
+<!ENTITY status4evar.advanced.warning.title "There be dragons here!">
+<!ENTITY status4evar.advanced.warning.button "I promise to be careful!">
 <!ENTITY status4evar.advanced.warning "These advanced settings may cause issues with Location-4-Evar or other extensions. Modify at your own risk.">
 
 <!ENTITY status4evar.advanced.urlbar.forceBinding "Attempt to force the the Location Bar XBL binding.">

@@ -412,11 +412,11 @@
 				<hbox id="warningBox" align="top">
 					<image id="exclam" />
 					<vbox id="warningInnerBox" flex="1">
-						<label id="warningTitle">&aboutWarningTitle.label;</label>
+						<label id="warningTitle">&status4evar.advanced.warning.title;</label>
 						<label id="warningText">&status4evar.advanced.warning;</label>
 						<checkbox id="showWarningNextTime" label="&aboutWarningCheckbox.label;" checked="true" />
 						<hbox pack="center">
-							<button id="warningButton" command="status4evar-command-advanced-continue" label="&aboutWarningButton.label;" />
+							<button id="warningButton" command="status4evar-command-advanced-continue" label="&status4evar.advanced.warning.button;" />
 						</hbox>
 					</vbox>
 				</hbox>
