@@ -145,20 +145,23 @@ S4EStatusService.prototype =
 			this._window.XULBrowserWindow.watch(prop, XULBWPropHandler);
 		}, this);
 
-		let XULBWHandler = function(prop, oldval, newval) {
-			if(!newval)
-			{
+		if (this._window.watch) { // See https://github.com/JustOff/L4E/issues/1
+			let XULBWHandler = function(prop, oldval, newval) {
+				if(!newval)
+				{
+					return newval;
+				}
+				CU.reportError("XULBrowserWindow changed. Updating S4E bindings.");
+				this._window.setTimeout(function(self)
+				{
+					self.buildBinding();
+				}, 0, this);
 				return newval;
-			}
-			CU.reportError("XULBrowserWindow changed. Updating S4E bindings.");
-			this._window.setTimeout(function(self)
-			{
-				self.buildBinding();
-			}, 0, this);
-			return newval;
-		};
+			};
 
-		this._window.watch("XULBrowserWindow", XULBWHandler);
+			this._window.watch("XULBrowserWindow", XULBWHandler);
+		}
+
 	},
 
 	destroy: function()
