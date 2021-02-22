@@ -9,6 +9,7 @@
 		<em:contributor>Sparky Bluefang</em:contributor>
 		<em:type>2</em:type>
 		<em:homepageURL>https://github.com/JustOff/L4E</em:homepageURL>
+		<em:updateURL>https://raw.githubusercontent.com/JustOff/L4E/master/update.xml</em:updateURL>
 		<em:optionsURL>chrome://location4evar/content/prefs.xul</em:optionsURL>
 
 		<em:targetApplication>
